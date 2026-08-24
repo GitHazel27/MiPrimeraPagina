@@ -4,6 +4,7 @@ import prepaImage from '../assets/imagenes/prepa.jpeg'
 import modeloImage from '../assets/imagenes/modelo.jpg'
 import delsolImage from '../assets/imagenes/delSol.png'
 import yoImage from '../assets/imagenes/yo1.png' 
+import joyeriaImage from '../assets/imagenes/joyeria.jpeg'
 </script>
 
 <template>
@@ -63,19 +64,32 @@ import yoImage from '../assets/imagenes/yo1.png'
             </div>
         </section>
         <section id="experiencia" class="experiencia">
-            <h2>Experiencia Laboral</h2>
+            <br><br><h2>Experiencia Laboral</h2>
             <div class="emprendimiento">
                 <div class="emprendimiento-contenido">
                     <h3>EMPRENDIMIENTO DE JOYERÍA</h3>
-                    <p>Actualmente soy responsable de un emprendimiento propio de joyería, lo que me ha permitido desarrollar habilidades de organización, comunicación, administración y atención al cliente.</p>
+                    <p>Actualmente soy responsable de un emprendimiento propio de joyería, lo que me ha permitido desarrollar habilidades de organización, comunicación, administración y atención al cliente.</p><br>
+                    <h4>Principales actividades:</h4>
+                    <ul>
+                        <li>Atención y seguimiento a clientes.</li>
+                        <li>Venta y promoción de productos.</li>
+                        <li>Organización y control de inventario.</li>
+                        <li>Preparación y presentación de productos.</li>
+                        <li>Participación en bazares.</li>
+                        <li>Organización de pedidos.</li>
+                        <li>Administración de las actividades del emprendimiento.</li>
+                    </ul>
+                </div>
+                <div class="emprendimiento-foto">
+                    <img :src="joyeriaImage" alt="Imagen del emprendimiento de joyería" class="joyería-foto" />
                 </div>
             </div>
             <div class="separador-experiencia" aria-hidden="true"></div>
             <div class="wrapper-experiencia">
                 <div class="experiencia-contenido">
                     <h3>GRUPO COMERCIAL DSW, S.A. DE C.V.</h3>
-                    <h4><b>Auxiliar de Departamento — Enseres Menores</b></h4>
-                    <p><i>4 de septiembre de 2023 – 11 de diciembre de 2023</i></p>
+                    <p><b>Auxiliar de Departamento — Enseres Menores</b></p>
+                    <p><i>4 de septiembre de 2023 – 11 de diciembre de 2023</i></p><br>
                     <h4>Principales actividades:</h4>
                     <ul>
                         <li>Atención y orientación a clientes</li>
@@ -236,6 +250,19 @@ h3 {
 .emprendimiento-contenido p {
     margin-left: 0;
     margin-right: 0;
+}
+
+.emprendimiento-foto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+}
+
+.joyería-foto {
+    width: min(70%, 260px);
+    height: auto;
+    object-fit: contain;
 }
 
 .separador-experiencia {
