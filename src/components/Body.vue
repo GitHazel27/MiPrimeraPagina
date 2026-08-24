@@ -105,6 +105,28 @@ import joyeriaImage from '../assets/imagenes/joyeria.jpeg'
                 </div>
             </div>
         </section>
+        <section id="habilidades" class="habilidades">
+            <h2>Habilidades</h2>
+            <div class="wrapper-habilidades">
+                <div class="wrapper-habilidadestec">
+                    <h3>HABILITADES TÉCNICAS</h3><br>
+                    <ol>
+                        <li>Java<br>Conocimientos de programación y desarrollo de programas utilizando Java.</li>
+                        <li>Python<br>Conocimientos básicos de programación y desarrollo de programas utilizando Python.</li>
+                        <li>Microsoft Copilot<br>Conocimientos adquiridos mediante cursos relacionados con Inteligencia Artificial y herramientas tecnológicas.</li>
+                    </ol>
+                </div>
+                <div class="wrapper-habilidadesprof">
+                    <h3>HABILIDADES PROFESIONALES</h3><br>
+                    <ol>
+                        <li>Atención al cliente<br>Capacidad para brindar atención, resolver dudas y mantener una comunicación adecuada con los clientes.</li>
+                        <li>Ventas<br>Experiencia en promoción y venta de productos.</li>
+                        <li>Trabajo en equipo<br>Capacidad para colaborar con otras personas y participar en actividades grupales.</li>
+                        <li>Organización<br>Experiencia en organización de productos, inventarios, pedidos y actividades de un emprendimiento.</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
 </template>
 
 
@@ -264,6 +286,16 @@ h3 {
     height: auto;
     object-fit: contain;
 }
+@media (max-width: 600px) {
+    .emprendimiento {
+        grid-template-columns: 1fr;
+        padding: 2rem 10%;
+    }
+
+    .emprendimiento-contenido {
+        text-align: center;
+    }
+}
 
 .separador-experiencia {
     height: 2px;
@@ -368,6 +400,42 @@ h3 {
     .inicio-texto {
         font-size: clamp(2rem, 10vw, 3rem);
         text-align: center;
+    }
+}
+
+.habilidades {
+    background-color: #ff097813;
+    padding: 4rem 0;
+    text-align: center;
+}
+.wrapper-habilidades {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+    gap: 2rem;
+    padding: 4rem 10%;
+    border-width: 60px;
+    border-color: #ff0586;
+}
+
+.wrapper-habilidadestec ol, .wrapper-habilidadesprof ol{
+    text-align: left;
+}
+
+.wrapper-habilidadesprof {
+    border-left: 3px solid #ff05862b;
+    padding-left: 2rem;
+}
+
+@media (max-width: 600px) {
+    .wrapper-habilidades {
+        grid-template-columns: 1fr;
+        padding: 2rem 10%;
+    }
+
+    .wrapper-habilidadesprof {
+        border-left: 0;
+        padding-left: 0;
     }
 }
 </style>
