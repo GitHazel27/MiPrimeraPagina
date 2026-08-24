@@ -4,12 +4,13 @@ import Header from './components/Header.vue'
 /*import HelloWorld from './components/HelloWorld.vue'*/
 import Body from './components/Body.vue'
 /*import TheWelcome from './components/TheWelcome.vue'*/
+import Footer from './components/Footer.vue';
 </script>
 
 <template>
   <Header></Header>
-
   <Body></Body>
+  <Footer></Footer>
 </template>
 
 <style scoped>

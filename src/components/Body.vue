@@ -412,7 +412,7 @@ h3 {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     align-items: start;
-    gap: 2rem;
+    gap: 1rem;
     padding: 4rem 10%;
     border-width: 60px;
     border-color: #ff0586;
@@ -423,7 +423,7 @@ h3 {
 }
 
 .wrapper-habilidadesprof {
-    border-left: 3px solid #ff05862b;
+    border-left: solid #ff05862b;
     padding-left: 2rem;
 }
 
